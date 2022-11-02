@@ -22,7 +22,9 @@ const Card = (props) => {
       draggable={props.draggable}
       onDragStart={dragStart}
       onDragOver={dragOver}
-    ></div>
+    >
+        {props.children}
+    </div>
   );
 };
 
