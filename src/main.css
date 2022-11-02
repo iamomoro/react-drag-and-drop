@@ -38,7 +38,7 @@ body {
   padding: 15px 25px;
   background-color: #f3f3f3;
 
-  curser: pointer;
-
   margin-bottom: 15px;
+
+  cursor: pointer;
 }
