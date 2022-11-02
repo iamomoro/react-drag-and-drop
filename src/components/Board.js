@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Board = (props) => {
-  const drop = e => {
+  const drop = (e) => {
     e.preventDefault();
     const card_id = e.dataTransfer.getData('card_id');
 
@@ -9,21 +9,22 @@ const Board = (props) => {
     card.style.display = 'block';
 
     e.target.appendChild(card);
-  }
+  };
 
-  const dragOver = e => {
+  const dragOver = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
-    <div id={props.id}
-    onDrop={drop}
-    onDragOver={dragOver}
-    className={props.className}
+    <div
+      id={props.id}
+      onDrop={drop}
+      onDragOver={dragOver}
+      className={props.className}
     >
       {props.children}
     </div>
-  )
-}
+  );
+};
 
 export default Board;

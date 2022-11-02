@@ -11,7 +11,7 @@ const Card = (props) => {
     }, 0);
   };
 
-  const dragOver = e => {
+  const dragOver = (e) => {
     e.stopPropagation();
   };
 
@@ -23,7 +23,7 @@ const Card = (props) => {
       onDragStart={dragStart}
       onDragOver={dragOver}
     >
-        {props.children}
+      {props.children}
     </div>
   );
 };
