@@ -11,6 +11,10 @@ const Card = (props) => {
     }, 0);
   };
 
+  const dragOver = e => {
+    e.stopPropagation();
+  };
+
   return (
     <div
       className={props.className}
